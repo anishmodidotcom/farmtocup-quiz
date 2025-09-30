@@ -15,7 +15,9 @@ export default function StepFooter({
   return (
     <div className="flex items-center justify-between gap-3 sticky bottom-0 bg-bg/70 backdrop-blur p-4 border-t border-muted">
       <button
-        onClick={() => (backHref ? router.push(backHref as Route) : router.back())}
+        onClick={() =>
+          backHref ? router.push(backHref as Route) : router.back()
+        }
         className="px-4 py-2 rounded-lg border border-muted"
       >
         Back
