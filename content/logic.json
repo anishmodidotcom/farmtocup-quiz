@@ -1,0 +1,380 @@
+{
+  "questions": [
+    {
+      "id": "gear",
+      "title": "What gear do you have?",
+      "multi": true,
+      "helper": "Pick all that apply.",
+      "options": [
+        {"id":"espresso","label":"Espresso machine","icon":"espresso"},
+        {"id":"moka","label":"Moka pot","icon":"moka"},
+        {"id":"frenchpress","label":"French press","icon":"frenchpress"},
+        {"id":"v60","label":"V60 dripper","icon":"v60"},
+        {"id":"aeropress","label":"AeroPress","icon":"aeropress"},
+        {"id":"coldbrew","label":"Cold-brew jar","icon":"coldbrew"},
+        {"id":"kettle","label":"Kettle only","icon":"kettle"}
+      ]
+    },
+    {
+      "id": "flavor",
+      "title": "Which flavors excite you?",
+      "multi": false,
+      "options": [
+        {"id":"fruity","label":"Fruity"},
+        {"id":"nutty","label":"Nutty"},
+        {"id":"chocolatey","label":"Chocolatey"},
+        {"id":"tropical","label":"Tropical"},
+        {"id":"smooth","label":"Smooth & balanced"}
+      ]
+    },
+    {
+      "id": "style",
+      "title": "Brew style today?",
+      "multi": false,
+      "options": [
+        {"id":"black","label":"Hot black"},
+        {"id":"milk","label":"With milk"},
+        {"id":"iced","label":"Iced"},
+        {"id":"sweet","label":"Sweet & fun"}
+      ]
+    },
+    {
+      "id": "strength",
+      "title": "How strong?",
+      "multi": false,
+      "options": [
+        {"id":"light","label":"Light"},
+        {"id":"medium","label":"Medium"},
+        {"id":"strong","label":"Strong"}
+      ]
+    },
+    {
+      "id": "vibe",
+      "title": "Your vibe?",
+      "multi": false,
+      "options": [
+        {"id":"focused","label":"Focused"},
+        {"id":"chill","label":"Chill"},
+        {"id":"adventurous","label":"Adventurous"},
+        {"id":"social","label":"Social"}
+      ]
+    },
+    {
+      "id": "time",
+      "title": "Time & effort?",
+      "multi": false,
+      "options": [
+        {"id":"quick","label":"Quick"},
+        {"id":"ritual","label":"I enjoy the ritual"}
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id":"brazil_cerrado",
+      "title":"Brazil Cerrado",
+      "notes":["vanilla","white chocolate"],
+      "suitable":["espresso","milk"],
+      "productUrl":"https://farmtocup.ae/product/brazil-cerrado"
+    },
+    {
+      "id":"guji_hambela_nat",
+      "title":"Ethiopia Guji Hambela (Natural)",
+      "notes":["floral","lemon","mango","strawberry"],
+      "suitable":["espresso","milk","filter"],
+      "productUrl":"https://farmtocup.ae/product/ethiopia-guji-hambela"
+    },
+    {
+      "id":"guji_hambela_ana",
+      "title":"Ethiopia Guji Hambela (Anaerobic)",
+      "notes":["rich floral","berries","raspberry"],
+      "suitable":["filter"],
+      "productUrl":"https://farmtocup.ae/product/ethiopia-guji-hambela-anaerobic"
+    },
+    {
+      "id":"papua_new_guinea",
+      "title":"Papua New Guinea",
+      "notes":["old wine","plum","raspberry"],
+      "suitable":["espresso","milk","filter"],
+      "productUrl":"https://farmtocup.ae/product/papua-new-guinea"
+    },
+    {
+      "id":"colombia_banana",
+      "title":"Colombia Banana (Infused)",
+      "notes":["banana","tropical fruits"],
+      "suitable":["filter"],
+      "productUrl":"https://farmtocup.ae/product/colombia-banana"
+    },
+    {
+      "id":"colombia_coconut",
+      "title":"Colombia Coconut (Infused)",
+      "notes":["toasted coconut","creamy vanilla","caramelized"],
+      "suitable":["filter"],
+      "productUrl":"https://farmtocup.ae/product/colombia-coconut"
+    },
+    {
+      "id":"matcha",
+      "title":"Matcha",
+      "notes":[],
+      "suitable":["matcha"],
+      "productUrl":"https://farmtocup.ae/product/matcha"
+    }
+  ],
+  "drinks": [
+    {
+      "id":"flat_white",
+      "title":"Flat White",
+      "bean":"brazil_cerrado",
+      "family":"milk",
+      "requiredGear":["espresso","moka"],
+      "method":"Espresso or Moka",
+      "steps":[
+        "Pull a double shot (18–20 g → 36–40 g).",
+        "Steam 120 ml milk to silky microfoam.",
+        "Swirl and pour centrally.",
+        "Tap to settle."
+      ],
+      "persona":"Precision over drama—clean and efficient."
+    },
+    {
+      "id":"fp_classic",
+      "title":"French-Press Classic",
+      "bean":"brazil_cerrado",
+      "family":"frenchpress",
+      "requiredGear":["frenchpress"],
+      "method":"French press",
+      "steps":[
+        "Add 18 g coffee + 300 ml water at 92–94°C.",
+        "Stir, steep 4 minutes.",
+        "Press slowly.",
+        "Pour immediately."
+      ],
+      "persona":"Calm, grounded, unflappable."
+    },
+    {
+      "id":"mocha_comfort",
+      "title":"Mocha (comfort)",
+      "bean":"brazil_cerrado",
+      "family":"dessert",
+      "requiredGear":["espresso","moka"],
+      "method":"Espresso or Moka",
+      "steps":[
+        "Pull a double shot.",
+        "In cup: 1 tbsp cocoa + 1 tsp sugar + splash hot water.",
+        "Add 150 ml steamed milk.",
+        "Stir smooth."
+      ],
+      "persona":"Soft spot, strong spine."
+    },
+    {
+      "id":"moka_americano",
+      "title":"Moka Americano (bold)",
+      "bean":"papua_new_guinea",
+      "family":"moka",
+      "requiredGear":["moka"],
+      "method":"Moka",
+      "steps":[
+        "Brew Moka pot.",
+        "Put 150–180 ml hot water in cup.",
+        "Top with Moka brew to taste.",
+        "No milk."
+      ],
+      "persona":"Old-school grit with a modern calendar."
+    },
+    {
+      "id":"iced_black",
+      "title":"Iced Black (sturdy)",
+      "bean":"papua_new_guinea",
+      "family":"iced",
+      "requiredGear":["espresso","moka"],
+      "method":"Espresso or Moka over ice",
+      "steps":[
+        "Pull a double shot.",
+        "Fill a tall glass with ice.",
+        "Pour over, quick stir.",
+        "Optional lemon peel."
+      ],
+      "persona":"Direct, decisive, weather-proof."
+    },
+    {
+      "id":"floral_v60",
+      "title":"Floral V60",
+      "bean":"guji_hambela_nat",
+      "family":"pourover",
+      "requiredGear":["v60"],
+      "method":"V60",
+      "steps":[
+        "Use 15 g coffee, 250 g water.",
+        "Bloom 35–40 g for 30 s.",
+        "Slow spirals to 250 g (2:30–3:00).",
+        "Sip warm."
+      ],
+      "persona":"Detail-lover with a poet’s patience."
+    },
+    {
+      "id":"ap_bright",
+      "title":"AeroPress Bright Cup",
+      "bean":"guji_hambela_nat",
+      "family":"aeropress",
+      "requiredGear":["aeropress"],
+      "method":"AeroPress",
+      "steps":[
+        "Add 15 g coffee + 200 ml water.",
+        "Steep 1 minute.",
+        "Press 20–30 s.",
+        "Dilute to taste."
+      ],
+      "persona":"Curious, nimble, elegantly geeky."
+    },
+    {
+      "id":"guji_latte",
+      "title":"Guji Latte (subtle fruit)",
+      "bean":"guji_hambela_nat",
+      "family":"milk",
+      "requiredGear":["espresso","moka"],
+      "method":"Espresso or Moka + milk",
+      "steps":[
+        "Pull a double shot.",
+        "Steam 150 ml milk (silky).",
+        "Pour gently to keep fruit notes alive.",
+        "Skip syrups."
+      ],
+      "persona":"Refined fun—never loud, always interesting."
+    },
+    {
+      "id":"juicy_v60",
+      "title":"Juicy V60",
+      "bean":"guji_hambela_ana",
+      "family":"pourover",
+      "requiredGear":["v60"],
+      "method":"V60",
+      "steps":[
+        "Use 15 g coffee, 250 g water.",
+        "Bloom 40 g for 30 s.",
+        "Pulse pours to 250 g.",
+        "Let cool slightly—berry pop."
+      ],
+      "persona":"You chase bright ideas—and they say yes."
+    },
+    {
+      "id":"flash_over_ice",
+      "title":"Flash-Brew over Ice",
+      "bean":"guji_hambela_ana",
+      "family":"flash",
+      "requiredGear":["v60"],
+      "method":"V60 on ice",
+      "steps":[
+        "Put 120 g ice in carafe.",
+        "Bloom 40 g for 30 s.",
+        "Finish to total 250 g hot water.",
+        "Swirl, serve over fresh ice."
+      ],
+      "persona":"Spark, speed, style—lightning in a tumbler."
+    },
+    {
+      "id":"banana_mocha",
+      "title":"Banana Mocha",
+      "bean":"colombia_banana",
+      "family":"dessert",
+      "requiredGear":["frenchpress","v60","aeropress","coldbrew","kettle"],
+      "method":"Filter concentrate + milk",
+      "steps":[
+        "Brew strong filter (≈1:12).",
+        "In cup: 1 tbsp cocoa + 10–15 ml banana syrup.",
+        "Add 150 ml steamed milk.",
+        "Stir smooth."
+      ],
+      "persona":"Playful mind, serious output."
+    },
+    {
+      "id":"banana_iced_latte",
+      "title":"Banana Iced Latte",
+      "bean":"colombia_banana",
+      "family":"iced",
+      "requiredGear":["frenchpress","v60","aeropress","coldbrew","kettle"],
+      "method":"Filter concentrate over ice",
+      "steps":[
+        "Brew strong filter or use cold-brew concentrate.",
+        "Fill tall glass with ice.",
+        "Add 150 ml milk.",
+        "Stir in 10 ml banana syrup."
+      ],
+      "persona":"You turn errands into adventures."
+    },
+    {
+      "id":"coconut_iced_latte",
+      "title":"Coconut Iced Latte",
+      "bean":"colombia_coconut",
+      "family":"iced",
+      "requiredGear":["frenchpress","v60","aeropress","coldbrew","kettle"],
+      "method":"Filter concentrate over ice",
+      "steps":[
+        "Brew strong filter.",
+        "Put ice in glass.",
+        "Add 120–150 ml milk.",
+        "Stir in 10–15 ml coconut syrup."
+      ],
+      "persona":"Tropical Explorer—sunshine tends to follow you."
+    },
+    {
+      "id":"coconut_coldbrew",
+      "title":"Coconut Cold Brew",
+      "bean":"colombia_coconut",
+      "family":"coldbrew",
+      "requiredGear":["coldbrew"],
+      "method":"Cold brew",
+      "steps":[
+        "Use 1:8 (80 g : 640 ml) in jar.",
+        "Steep 14–16 h in fridge.",
+        "Strain, pour over ice.",
+        "Splash coconut milk."
+      ],
+      "persona":"Chill operator, long-game strategist."
+    },
+    {
+      "id":"iced_matcha_latte",
+      "title":"Iced Matcha Latte",
+      "bean":"matcha",
+      "family":"matcha",
+      "requiredGear":[],
+      "method":"Whisked",
+      "steps":[
+        "Whisk 2 g matcha + 30 ml water till smooth.",
+        "Fill glass with ice.",
+        "Add 180 ml milk.",
+        "Pour matcha; stir."
+      ],
+      "persona":"Zen brain, city pace."
+    }
+  ],
+  "weights": {
+    "flavor→bean": {
+      "fruity": { "guji_hambela_nat": 2, "guji_hambela_ana": 2, "papua_new_guinea": 1 },
+      "tropical": { "colombia_coconut": 3, "colombia_banana": 3 },
+      "chocolatey": { "brazil_cerrado": 3, "papua_new_guinea": 2 },
+      "nutty": { "brazil_cerrado": 3, "papua_new_guinea": 1 },
+      "smooth": { "brazil_cerrado": 2 }
+    },
+    "style→family": {
+      "black": { "pourover": 3, "aeropress": 3, "frenchpress": 3, "moka": 2 },
+      "milk": { "milk": 3 },
+      "iced": { "iced": 3, "flash": 3, "coldbrew": 3 },
+      "sweet": { "dessert": 3 }
+    },
+    "strength": {
+      "light": { "guji_hambela_nat": 1, "guji_hambela_ana": 1, "pourover": 1 },
+      "medium": {},
+      "strong": { "papua_new_guinea": 2, "moka": 2 }
+    },
+    "vibe": {
+      "focused": { "espresso": 1, "aeropress": 1 },
+      "chill": { "frenchpress": 1, "coldbrew": 1 },
+      "adventurous": { "guji_hambela_ana": 2, "flash": 2 },
+      "social": { "colombia_banana": 1, "colombia_coconut": 1 }
+    },
+    "time": {
+      "quick": { "espresso": 1, "aeropress": 1, "iced": 1 },
+      "ritual": { "v60": 1, "frenchpress": 1, "coldbrew": 1 }
+    }
+  }
+}
